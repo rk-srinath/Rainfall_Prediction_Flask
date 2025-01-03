@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainfall Prediction</title>
+</head>
+<body>
+    <h1>Rainfall Prediction</h1>
+    <form action="/predict" method="post">
+        <table>
+            <tr>
+                <td><label for="max_temp">Max Temperature:</label></td>
+                <td><input type="text" id="max_temp" name="max_temp" style="width: 100%; padding: 8px;"></td>
+            </tr>
+            <tr>
+                <td><label for="min_temp">Min Temperature:</label></td>
+                <td><input type="text" id="min_temp" name="min_temp" style="width: 100%; padding: 8px;"></td>
+            </tr>
+            <tr>
+                <td><label for="rh1">Relative Humidity 1:</label></td>
+                <td><input type="text" id="rh1" name="rh1" style="width: 100%; padding: 8px;"></td>
+            </tr>
+            <tr>
+                <td><label for="rh2">Relative Humidity 2:</label></td>
+                <td><input type="text" id="rh2" name="rh2" style="width: 100%; padding: 8px;"></td>
+            </tr>
+            <tr>
+                <td><label for="wind">Wind Speed:</label></td>
+                <td><input type="text" id="wind" name="wind" style="width: 100%; padding: 8px;"></td>
+            </tr>
+            <tr>
+                <td><label for="ssh">Sunshine Hours:</label></td>
+                <td><input type="text" id="ssh" name="ssh" style="width: 100%; padding: 8px;"></td>
+            </tr>
+            <tr>
+                <td><label for="evap">Evaporation:</label></td>
+                <td><input type="text" id="evap" name="evap" style="width: 100%; padding: 8px;"></td>
+            </tr>
+            <tr>
+                <td><label for="radiation">Radiation:</label></td>
+                <td><input type="text" id="radiation" name="radiation" style="width: 100%; padding: 8px;"></td>
+            </tr>
+            <tr>
+                <td><label for="fao56_et">FAO56_ET:</label></td>
+                <td><input type="text" id="fao56_et" name="fao56_et" style="width: 100%; padding: 8px;"></td>
+            </tr>
+            <tr>
+                <td><label for="lat">Latitude:</label></td>
+                <td><input type="text" id="lat" name="lat" style="width: 100%; padding: 8px;"></td>
+            </tr>
+            <tr>
+                <td><label for="lon">Longitude:</label></td>
+                <td><input type="text" id="lon" name="lon" style="width: 100%; padding: 8px;"></td>
+            </tr>
+            <tr>
+                <td><label for="cum_rain">Cumulative Rain:</label></td>
+                <td><input type="text" id="cum_rain" name="cum_rain" style="width: 100%; padding: 8px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <button type="submit" style="padding: 10px 20px; font-size: 16px;">Predict</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
